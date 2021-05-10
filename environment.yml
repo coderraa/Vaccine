@@ -1,1 +1,23 @@
-
+name: vaccination-slot-availability
+channels:
+- defaults
+- conda-forge
+- ericmjl
+dependencies:
+- python=3.8
+- conda
+- scikit-learn
+- scipy
+- pandas
+- numpy
+- matplotlib
+- pip
+- pylint
+- pydocstyle
+- flake8
+- black
+- hvplot
+- bokeh
+- holoviews
+- pip:
+  - streamlit
