@@ -67,7 +67,9 @@ def run():
                 #     csv_date = new_date.replace('-', '_')
                 #     new_df.to_csv(area_pin+'_'+csv_date+'.csv')
                 #     st.success("CSV Downloaded")
+      except Exception as e:
+            st.error("Something went wrong!!")
+            print(e)
 
         
-
 run()
