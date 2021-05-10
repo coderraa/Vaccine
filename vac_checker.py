@@ -7,7 +7,7 @@ import pandas as pd
 ua = UserAgent()
 header = {'User-Agent': str(ua.chrome)}
 
-def run():
+def main():
     img1 = Image.open('./meta/vac.png')
     img1 = img1.resize((400,400))
     st.image(img1,use_column_width=False)
@@ -71,4 +71,5 @@ def run():
             st.error("Something went wrong!!")
             print(e)
 
-run()
+if __name__ == "__main__":
+    main()
