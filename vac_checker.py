@@ -8,6 +8,9 @@ ua = UserAgent()
 header = {'User-Agent': str(ua.chrome)}
 
 def run():
+    img1 = Image.open('vac.png')
+    img1 = img1.resize((400,400))
+    st.image(img1,use_column_width=False)
     
     st.title("Vaccination Centre Checker")
 
@@ -65,8 +68,6 @@ def run():
                 #     new_df.to_csv(area_pin+'_'+csv_date+'.csv')
                 #     st.success("CSV Downloaded")
 
-        except Exception as e:
-            st.error("Something went wrong!!")
-            print(e)
+        
 
 run()
