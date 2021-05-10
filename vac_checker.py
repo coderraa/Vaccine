@@ -8,9 +8,8 @@ ua = UserAgent()
 header = {'User-Agent': str(ua.chrome)}
 
 def main():
-    img1 = Image.open('./meta/vac.png')
-    img1 = img1.resize((400,400))
-    st.image(img1,use_column_width=False)
+    img1 = Image.open('yash vaccine.png')
+    st.image(img1,use_column_width=True)
     st.title("Vaccination Centre Checker")
 
     st.markdown("<h4 style='text-align: left; color: red;'>* Data is based on Government API</h4>",
