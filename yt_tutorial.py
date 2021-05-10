@@ -4,7 +4,7 @@ import pandas as pd
 
 ua = UserAgent()
 header = {'User-Agent': str(ua.chrome)}
-pin = '122001'
+pin = 122001
 date = '07-05-2021'
 response = requests.get(
     f"https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode={pin}&date={date}",
